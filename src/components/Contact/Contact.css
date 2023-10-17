@@ -1,0 +1,68 @@
+.heading-h2{
+    font-size: 3.5rem;
+    color: slateblue;
+    position: absolute;
+    text-decoration: line-through;
+}
+
+.contact{
+    color: #593077;
+    margin-top: 150px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.phone, .gmail, .linkedin, .hackerrank, .location{
+    padding-top: 40px;
+    font-size: 90px;
+}
+
+#para{
+    animation: none;
+    padding: 0;
+}
+
+p a{
+    text-decoration: none;
+    padding-top: 0;
+    color: white;
+    padding: 5px;
+    background-color: #e67920;
+    border-radius: 20px;
+}
+
+p a:hover{
+    background-color: red;
+}
+
+@media only screen and (max-width:480px) {
+    .main{
+        display: grid;
+    }
+    
+    .heading-h2{
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .contact{
+        margin: 0;
+        overflow: scroll;
+    }
+
+    .phone, .gmail, .linkedin, .hackerrank, .location{
+        margin-top: 0px;
+        margin-bottom:  30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #para{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,43 @@
+.h2{
+    font-size: 3rem;
+    color: rgb(233, 34, 143);
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 10rem;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#react{
+    color: aqua;
+}
+
+.front-end, .backend, .database, .other{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+@media only screen and (max-width:480px) {
+    .front-end{
+        display: grid;
+    }
+
+    .backend{
+        display: grid;
+    }
+
+    .database{
+        display: grid;
+    }
+
+    .other{
+        display: grid;
+    }
+
+}
+

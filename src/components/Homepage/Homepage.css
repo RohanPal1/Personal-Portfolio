@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(166, 214, 214);
+    background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+}
+
+#intro{
+    padding: 4%;
+    height: 400px;
+    width: 600px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5%;
+}
+
+p{
+    padding-top: 4%;
+    font-size: 25px;
+    color: coral;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(255, 71, 148);
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {left:0px; color: rgb(233, 3, 3); top:0px;}
+    50%  {left:200px; color: rgb(4, 21, 97); top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+h1:hover{
+    animation: none;
+}
+
+p:hover{
+    animation: none;
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 2%;
+    margin-top: 2.5%;
+    border-radius: 25px;
+    border-style: none;
+}
+
+button:hover{
+    padding: 3%;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width:480px) {
+    .content{
+        display: grid;
+        justify-content: space-between;
+    }
+
+    #intro{
+        overflow: hidden;
+    }
+
+    h1{
+        animation: none;
+        display: flex;
+        align-content: center;
+    }
+
+    p{
+        animation: none;
+        width: 400px;
+        height: 250px;
+        overflow: visible;
+    }
+
+}

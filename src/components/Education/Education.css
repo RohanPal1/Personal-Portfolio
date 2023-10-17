@@ -1,0 +1,93 @@
+.high-school{
+    margin: 10px;
+    width: 400px;
+    height: 250px;
+    margin-left: 100px;
+    background-color: rgb(228, 230, 88);
+    border-radius: 80px;
+    transition: transform .2s;
+}
+
+.high-school p{
+    animation: none;
+    padding: 0px;
+    color: rgb(93, 157, 216);
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.high-school h2{
+    padding-top: 30px;
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+}
+
+.high-school:hover{
+    transform: scale(1.2);
+    background-color: crimson;
+}
+
+.intermediate{
+    width: 400px;
+    height: 250px;
+    margin-left: 550px;
+    background-color: rgb(228, 230, 88);
+    border-radius: 80px;
+    transition: transform .2s;
+}
+
+.intermediate p{
+    animation: none;
+    padding: 0px;
+    color: rgb(93, 157, 216);
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.intermediate h2{
+    padding-top: 30px;
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+}
+
+.btech{
+    width: 400px;
+    height: 250px;
+    margin-left: 100px;
+    background-color: rgb(228, 230, 88);
+    border-radius: 80px;
+    transition: transform .2s;
+}
+
+.btech p{
+    animation: none;
+    padding: 0px;
+    color: rgb(93, 157, 216);
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.btech h2{
+    padding-top: 30px;
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+}
+
+.btech:hover, .high-school:hover, .intermediate:hover{
+    transform: scale(1.2);
+    background-color: crimson;
+    
+}
+
+@media only screen and (max-width:480px) {
+    .intermediate, .high-school, .btech{
+        margin-left: 40px;
+    }
+
+    .btech p{
+        font-size: 1.8rem;
+    }
+}
